@@ -33,32 +33,32 @@
         <div id="container">
             <h2>Register to the Programming and Coding club</h2>
             <div id="register_form_div">
-                <form id="form">
+                <form id="form" method="POST" action="../PHP/register.php">
                     <input class="register_input" name="name_input"type="text" placeholder="Full Name"><br>
                     <input class="register_input" name="email_input"type="email" placeholder="Email"><br>
                     <input class="register_input" name="year_level_input"type="text" placeholder="Year and class, e.g: 11b">
                     <br>
                     <p>Please select all programming languages you know how to code in</p>
                     <div id="coding_experience_input">
-                        <input type="checkbox" name="HTML/CSS/JS" value="HTML/CSS/JS">HTML/CSS/JS
+                        <input type="checkbox" name="coding_experience[]" value="HTML/CSS/JS">HTML/CSS/JS
                         <br>
-                        <input type="checkbox" name="PHP" value="PHP">PHP
+                        <input type="checkbox" name="coding_experience[]" value="PHP">PHP
                         <br>
-                        <input type="checkbox" name="Python" value="Python">Python
+                        <input type="checkbox" name="coding_experience[]" value="Python">Python
                         <br>
-                        <input type="checkbox" name="Java/C#" value="Java/C#">Java/C#
+                        <input type="checkbox" name="coding_experience[]" value="Java/C#">Java/C#
                         <br>
-                        <input type="checkbox" name="C++" value="C++">C++
+                        <input type="checkbox" name="coding_experience[]" value="C++">C++
                         <br>
-                        <input type="checkbox" name="Visual_Basic" value="Visual Basic">Visual Basic
+                        <input type="checkbox" name="coding_experience[]" value="Visual Basic">Visual Basic
                         <br>
-                        <input type="checkbox" name="None" value="None of the above">None of the above
+                        <input type="checkbox" name="coding_experience[]" value="None of the above">None of the above
                         <br>
                     </div>
                     <br>
                     <p> Please select what you think your coding level is at</p>
                     <div id="coding_level_input">
-                        <select required>
+                        <select required name="coding_level">
                             <option value="Noob" name="Noob">Never coded before</option>
                             <option value="Beginner" name="Beginner">Beginner</option>
                             <option value="Intermediate" name="Intermediate">Intermediate</option>
