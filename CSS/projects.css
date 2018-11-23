@@ -1,4 +1,71 @@
 .nav-link:focus, .nav-link:hover {
     /* text-decoration: none; */
+    color: #ff1493;
+}
+
+.headline{
+    margin: 30px 10px 40px 10px;
+    color: deeppink;
+    text-align: center;
+}
+
+#projects ul{
+    margin: 0;
+    padding: 0;
+}
+
+#projects li{
+    margin: 0;
+    padding: 20px;
     color: deeppink;
 }
+
+#projects h1{
+    font-size: 30px;
+    padding: 10px;
+}
+
+#projects h3{
+    font-size: 21px;
+    padding: 10px;
+}
+
+#projects p{
+
+    text-align: left;
+    margin: 0 20px;
+    font-size: 17px;
+    color: rgb(69, 69, 69);
+}
+
+.image{
+    width: 510px;
+    height: 325px;
+}
+
+.body{
+    padding: 20px;
+    width: 75%;
+    height: 500px;
+    max-height: 375px;
+    overflow: scroll;
+}
+
+#projects h1:hover{
+    color: skyblue;
+}
+
+.headline p{
+    border: 2px solid lightblue;
+}
+
+p{
+    color: rgb(69, 69, 69);
+}
+
+.comments{
+    padding: 15px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
