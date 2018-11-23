@@ -23,6 +23,8 @@
 #projects h1{
     font-size: 30px;
     padding: 10px;
+    width: 270px;
+    font-weight: bold;
 }
 
 #projects h3{
@@ -69,3 +71,19 @@ p{
     font-weight: bold;
 }
 
+#addproject a{
+    color: deeppink;
+    background-color: white;
+    border: 2px solid deeppink;
+    padding: 10px;
+    width: 150px;
+    position: fixed;
+    left: 1300px;
+    font-weight: bold;
+}
+
+#addproject a:hover{
+    color: white;
+    background-color: deeppink;
+    border: 2px solid white;
+}

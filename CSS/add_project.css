@@ -1,0 +1,46 @@
+#goback a{
+    border: 2px solid deeppink;
+    background-color: white;
+    color: deeppink;
+    padding: 10px;
+    position: relative;
+    margin: 20px;
+    top: 75px;
+    left: 1300px;
+    font-weight: bold;
+}
+
+#goback a:hover{
+    border: 2px solid white;
+    background-color: deeppink;
+    color: white;
+}
+
+.headline{
+    color: deeppink;
+    padding: 50px;
+    margin: 10px 50px;
+    font-weight: bold;
+    height: 100px;
+    width: 420px;
+}
+
+.headline:hover{
+    color: skyblue;
+}
+
+.question{
+    margin: 30px 0;
+}
+
+.question p{
+    border: 1px solid deeppink;
+    color: rgb(69,69,69);
+    height: 300px;
+    width: 600px;
+    position: relative;
+    top: 0;
+    left: 100px;
+    margin: 10px 0;
+    padding: 10px 20px;
+}
