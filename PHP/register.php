@@ -20,7 +20,7 @@ if( empty($_POST["name_input"]) ) {
     echo "Checkbox was left unchecked."; 
 }
 else { 
-    echo "not empy";
+    echo "Not empty";
 }
 
 function IsChecked($checkname,$value){
