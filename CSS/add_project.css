@@ -1,13 +1,20 @@
+.nav-link:focus, .nav-link:hover {
+    /* text-decoration: none; */
+    color: #ff1493;
+}
+
 #goback a{
     border: 2px solid deeppink;
     background-color: white;
     color: deeppink;
     padding: 10px;
-    position: relative;
+    position: fixed;
     margin: 20px;
     top: 75px;
     left: 1300px;
     font-weight: bold;
+    border-radius: 10px;
+    font-size: 16px;
 }
 
 #goback a:hover{
@@ -19,7 +26,7 @@
 .headline{
     color: deeppink;
     padding: 50px;
-    margin: 10px 50px;
+    margin: 30px 50px 10px 50px;
     font-weight: bold;
     height: 100px;
     width: 420px;
@@ -43,4 +50,27 @@
     left: 100px;
     margin: 10px 0;
     padding: 10px 20px;
+    border-radius: 5px;
+}
+
+#submit a{
+    border: 2px solid deeppink;
+    background-color: white;
+    color: deeppink;
+    padding: 10px;
+    position: relative;
+    margin: 30px;
+    top: 30px;
+    left: 70px;
+    font-weight: bold;
+    border-radius: 10px;
+    font-size: 18px;
+    height: 50px;
+    width: 75px;
+}
+
+#submit a:hover{
+    border: 2px solid white;
+    background-color: deeppink;
+    color: white;
 }

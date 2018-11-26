@@ -23,13 +23,15 @@
 #projects h1{
     font-size: 30px;
     padding: 10px;
-    width: 270px;
+    width: 355px;
     font-weight: bold;
+    letter-spacing: 0.15em;
 }
 
 #projects h3{
     font-size: 21px;
     padding: 10px;
+    letter-spacing: 0.3em;
 }
 
 #projects p{
@@ -80,6 +82,8 @@ p{
     position: fixed;
     left: 1300px;
     font-weight: bold;
+    border-radius: 10px;
+    font-size: 16px;
 }
 
 #addproject a:hover{
