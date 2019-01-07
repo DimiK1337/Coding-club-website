@@ -2,3 +2,20 @@
     /* text-decoration: none; */
     color: deeppink;
 }
+
+#header1 {
+    text-align:center;
+    Color: deeppink;
+}
+.title {
+    text-align:center;
+    color: deeppink;
+}
+
+.words{
+    color: deeppink;
+}
+
+.word{
+    color: purple;
+}
