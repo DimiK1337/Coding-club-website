@@ -1,9 +1,1 @@
-Projects page:
-- Adding projects with a form:
-    - The user will need to enter a project title
-    - The author of the project
-    - Use JS to add the date it was uploaded
-    - If a project has a link, then we will need an option for the project's link
-    - On submit, the form data will be sent to a database
-- Retreiving projects on load of page:
-    - Figure out way to add new projects 
+Add a default img
