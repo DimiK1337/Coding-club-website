@@ -25,7 +25,7 @@
                         <a class="nav-link active" href="team_about.html">Who We Are</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" href="projects.html">Projects</a>
+                        <a class="nav-link active" href="../PHP/projects.php">Projects</a>
                     </li>
                 </ul>
             </nav>
@@ -33,14 +33,14 @@
         <div id="container">
             <h2>Register to the Programming and Coding club</h2>
             <div id="register_form_div">
-                <form id="form" method="POST" action="../PHP/register.php">
-                    <input class="register_input" name="name_input"type="text" placeholder="Full Name"><br>
-                    <input class="register_input" name="email_input"type="email" placeholder="Email"><br>
-                    <input class="register_input" name="year_level_input"type="text" placeholder="Year and class, e.g: 11b">
+                <form id="form" method="POST"  action="../PHP/register.php"> <!--action="../PHP/register.php"-->
+                    <input class="register_input" name="name_input"type="text" required placeholder="Full name"><br>
+                    <input class="register_input" name="email_input"type="email" placeholder="Email" required><br>
+                    <input class="register_input" name="year_level_input"type="text" required placeholder="Year and class, e.g: 11b">
                     <br>
                     <p>Please select all programming languages you know how to code in</p>
-                    <div id="coding_experience_input">
-                        <input type="checkbox" name="coding_experience[]" value="HTML/CSS/JS">HTML/CSS/JS
+                    <div id="coding_experience_input" onchange="handleCheckbox(this);">
+                        <input type="checkbox" name="coding_experience[]" value="HTML/CSS/JS" >HTML/CSS/JS
                         <br>
                         <input type="checkbox" name="coding_experience[]" value="PHP">PHP
                         <br>
@@ -52,7 +52,7 @@
                         <br>
                         <input type="checkbox" name="coding_experience[]" value="Visual Basic">Visual Basic
                         <br>
-                        <input type="checkbox" name="coding_experience[]" value="None of the above">None of the above
+                        <input id="None" type="checkbox" name="coding_experience[]" value="None of the above" >None of the above
                         <br>
                     </div>
                     <br>
@@ -62,17 +62,51 @@
                             <option value="Noob" name="Noob">Never coded before</option>
                             <option value="Beginner" name="Beginner">Beginner</option>
                             <option value="Intermediate" name="Intermediate">Intermediate</option>
-                            <option value="Advanced" name="Advanced">Adavanced</option>
+                            <option value="Advanced" name="Advanced">Advanced</option>
                         </select>
     
                     </div>
                     <br>
-                    <input id="submit_btn"type="submit" value="Submit">
+                    <input id="submit_btn" type="submit" value="Submit"onclick="set_coding_experience();">  
                 </form>
             </div>
-
-
         </div>
         
+        <script>
+            
+            
+            function set_coding_experience(){
+                var checkboxArray = document.getElementsByName("coding_experience[]");
+                var None_above_index = checkboxArray[checkboxArray.length -1];
+                var unChecked = []
+                if(1 == 1){
+                    checkboxArray.forEach(function(val){
+                        if (!val.checked){
+                            unChecked.push(val);
+                            if(val.value === None_above_index){
+                                val.checked = true;
+                                console.log("Val checked",val.checked);
+                            }
+                        }
+                    })
+                    console.log(unChecked);
+                
+                }
+                //console.log(checkboxArray);
+                $("#form").submit();            
+            }
+            
+            function handleCheckbox(checkbox_div){
+                var checkboxArray = Array.from(document.getElementsByName("coding_experience[]"));
+                var None_above_index = checkboxArray[checkboxArray.length -1];
+                var slicedArray = checkboxArray.slice(0,-1);
+                if(None_above_index.checked){ // check if others 
+                    slicedArray.forEach(function(val){
+                        val.checked = false;
+                    })
+                }
+            }
+                
+        </script>
     </body>
 </html>

@@ -1,0 +1,27 @@
+*{
+    text-align: center;
+}
+.nav-link:focus, .nav-link:hover {
+    /* text-decoration: none; */
+    color: deeppink;
+}
+
+#DB_Status_message {
+    text-align: center;
+}
+
+#DB_Status_Container {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border: 2px;
+    border-color: deeppink;
+    border-style: double;
+    height: 100px;
+    width: 500px;
+}
+img {
+    width: 600px;
+    margin-top: 50px;
+}
+

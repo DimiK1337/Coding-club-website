@@ -30,34 +30,39 @@
                 </ul>
             </nav>
         </div>
-            <div id="goback">
-                <a href="projects.html">Go Back to Projects</a>
-            </div>
-            <div id="subform">
-                <div class="question">
-                    <h2 class="headline">Name of the project:</h2>
-                    <p>Sample input </p>
+            <form id="project-submit-form" method="POST"  action="../PHP/submit_project.php">
+                <div id="goback">
+                    <a href="projects.html">Go Back to Projects</a>
                 </div>
-                <div class="question">
-                    <h2 class="headline">Your display name:</h2>
-                    <p>Sample input </p>
+                <div id="subform">
+                    <div class="question">
+                        <h2 class="headline">Name of the project:</h2>
+                        <input type="text" style="height:40px;" name="project_name"required placeholder="e.g: Manga Downloader">
+                    </div>
+                    <div class="question">
+                        <h2 class="headline">Your email you registered with:</h2><br>
+                        <input type="email" name="user_email" style="height:40px;" required placeholder="e.g: firstname.lastname@email.com">
+                    </div>
+                    <div class="question">
+                        <h2 class="headline">Photo of the project/<br>screenshot of the code:</h2><br><br><br>
+                        <h6 style="left: 100px;position: relative;">
+                            Please place all photos on <a href="https://imgur.com/" target="_blank">Imgur</a>
+                            and paste any links to your photos or video
+                        </h6>     
+                        <input type="text" name="media_links">
+                        
+                    </div>
+                    <div class="question">
+                        <h2 class="headline">Description:</h2>   
+                        <input type="text" name="description" required placeholder="e.g: A script that downloads manga to your computer">
+                    </div>     
                 </div>
-                <div class="question">
-                    <h2 class="headline">Photo of the project/<br>screenshot of the code:</h2><br><br><br>       
-                    <p>Sample input </p>
-                    
+                <div id="submit">
+                    <!--<a href="thank_you.html">Submit</a>-->
+                    <input type="submit"> </input>
                 </div>
-                <div class="question">
-                    <h2 class="headline">Description:</h2>   
-                    <p>Sample input </p>
-                </div>     
-            </div>
-            <div id="submit">
-                <a href="thank_you.html">Submit</a>
-                <br>
-                <p> .</p>
-                <br>
-            </div>
+            </form>
+            
 
         </body>
 </html>

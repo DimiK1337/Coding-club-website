@@ -33,14 +33,14 @@
 }
 
 .headline:hover{
-    color: skyblue;
+    color: black
 }
 
 .question{
     margin: 30px 0;
 }
 
-.question p{
+.question input{
     border: 1px solid deeppink;
     color: rgb(69,69,69);
     height: 300px;
@@ -53,11 +53,22 @@
     border-radius: 5px;
 }
 
-#submit a{
+#email {
+    border: 1px solid deeppink;
+    color: rgb(69,69,69);
+    width: 600px;
+    position: relative;
+    top: 0;
+    left: 100px;
+    margin: 10px 0;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+#submit input{
     border: 2px solid deeppink;
     background-color: white;
     color: deeppink;
-    padding: 10px;
     position: relative;
     margin: 30px;
     top: 30px;
@@ -69,12 +80,8 @@
     width: 75px;
 }
 
-#submit a:hover{
+#submit input:hover{
     border: 2px solid white;
     background-color: deeppink;
     color: white;
-}
-
-#submit p{
-    opacity: 0;
 }
