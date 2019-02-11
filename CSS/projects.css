@@ -84,10 +84,18 @@ p{
     font-weight: bold;
     border-radius: 10px;
     font-size: 16px;
+    margin-top: 30px;
 }
 
 #addproject a:hover{
     color: white;
     background-color: deeppink;
     border: 2px solid white;
+}
+
+
+.addproject {
+    margin-top: 50px;
+    margin-left: 25px;
+    margin-bottom: 50px;
 }
