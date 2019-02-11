@@ -1,0 +1,4 @@
+.nav-link:focus, .nav-link:hover {
+    /* text-decoration: none; */
+    color: deeppink;
+}
