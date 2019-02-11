@@ -1,0 +1,26 @@
+*{
+    text-align: center;
+}
+
+.nav-link:focus, .nav-link:hover {
+    /* text-decoration: none; */
+    color: deeppink;
+}
+#Greeting{
+    text-align: center;
+    padding-top: 30px;
+}
+
+#sign_up_text{
+    margin-top: 25px;
+    margin-bottom: 30px;
+}
+
+#terminal_gif{
+    text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
