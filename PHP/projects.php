@@ -26,7 +26,7 @@ $conn = new mysqli($servername, $username, $password, $dbname);
             <nav>
                 <ul class="nav justify-content-center">
                     <li class="nav-item">
-                        <a class="nav-link active" href="../HTML/index.html">Homepage</a>
+                        <a class="nav-link active" href="../index.html">Homepage</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link active" href="../HTML/contact.html">Contact</a>
